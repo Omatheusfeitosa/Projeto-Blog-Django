@@ -1,0 +1,36 @@
+# Python specific
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python/
+env/
+venv/
+pip-log.txt
+pip-delete-this-directory.txt
+.tox/
+.coverage
+.pytest_cache/
+
+# Django specific
+*.sqlite3
+media/ # If media files are stored locally and not needed in the image
+static/ # If static files are collected during build and not served by Django in prod
+migrations/ # If you don't need migration files in the final image
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Git
+.git
+.gitignore
+
+# Docker specific
+Dockerfile
+docker-compose.yml
+.dockerignore
